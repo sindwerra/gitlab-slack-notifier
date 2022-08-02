@@ -1,3 +1,6 @@
+![image info](assets/pic/appLogo.jpg)
+
+
 ## 1 创建Slack APP并配置
 
 https://api.slack.com/apps?new_app=1&ref=bolt_start_hub
