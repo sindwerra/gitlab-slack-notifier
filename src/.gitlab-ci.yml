@@ -12,9 +12,7 @@ SentMessage:
   stage: notification
   before_script:
     - *install
-    - source DM.sh
   script:
-    - get_reviewers
-    - python DM2.py
+    - python DM.py
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
