@@ -1,5 +1,3 @@
-[TOC]
-
 ## 1 创建Slack APP并配置
 
 https://api.slack.com/apps?new_app=1&ref=bolt_start_hub
@@ -67,3 +65,4 @@ export FLASK_TOKEN=''
 export FLASK_APP=app.py
 flask run
 ```
+
