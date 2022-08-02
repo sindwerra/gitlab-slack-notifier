@@ -1,0 +1,20 @@
+image: "python:3.10-buster"
+
+.install: &install
+  - python -V
+  - apt update
+  - pip install slack_sdk
+
+stages:
+  - notification
+
+SentMessage:
+  stage: notification
+  before_script:
+    - *install
+    - source DM.sh
+  script:
+    - get_reviewers
+    - python DM2.py
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
